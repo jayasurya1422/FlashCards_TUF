@@ -1,26 +1,24 @@
-// src/components/Layout.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Layout = ({ children }) => (
   <div>
     {/* Navigation Bar */}
-    <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="border-gray-200 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white py-1">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
         <a href="#flashcard" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flashcard</span>
+          <span className="self-center text-3xl font-bold whitespace-nowrap">FLT</span>
         </a>
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-3 w-12 h-12 justify-center text-sm text-white rounded-lg md:hidden hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-white"
           aria-controls="navbar-solid-bg"
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-5 h-5"
+            className="w-6 h-6"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -36,11 +34,11 @@ const Layout = ({ children }) => (
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-          <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+          <ul className="flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
             <li>
               <Link
                 to="/"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-3 px-4 text-xl md:p-0 text-white rounded hover:text-yellow-300 md:hover:bg-transparent"
                 aria-current="page"
               >
                 Home
@@ -49,7 +47,7 @@ const Layout = ({ children }) => (
             <li>
               <Link
                 to="/admin"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-3 px-4 text-xl md:p-0 text-white rounded hover:text-yellow-300 md:hover:bg-transparent"
               >
                 Admin Dashboard
               </Link>
@@ -57,7 +55,7 @@ const Layout = ({ children }) => (
             <li>
               <Link
                 to="/questions"
-                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-3 px-4 text-xl md:p-0 text-white rounded hover:text-yellow-300 md:hover:bg-transparent"
               >
                 Flash Cards
               </Link>
@@ -69,6 +67,7 @@ const Layout = ({ children }) => (
 
     {/* Content */}
     <main className="p-4">
+      
       {children}
     </main>
   </div>
