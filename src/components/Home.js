@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
             Start Learning
           </Link>
           <Link
-            to="/create-flashcards"
+            to="/admin"
             className="inline-block px-8 py-4 text-xl font-semibold text-white bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 rounded-lg shadow-md transition-colors duration-300 ease-in-out"
           >
             Create Flashcards
