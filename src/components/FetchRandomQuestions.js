@@ -11,7 +11,7 @@
         try {
           const response = await axios.get('https://opentdb.com/api.php', {
             params: {
-              amount: 5,
+              amount: 100,
               type: 'multiple',
               difficulty: 'easy'
             }
