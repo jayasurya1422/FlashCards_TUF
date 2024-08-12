@@ -1,0 +1,45 @@
+/* FlashcardList.css */
+
+.flashcard-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flashcard-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .flashcard-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flashcard-list li button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .flashcard-list li button:hover {
+    background-color: #c82333;
+  }
+  
+  .flashcard-list li button.edit {
+    background-color: #007bff;
+  }
+  
+  .flashcard-list li button.edit:hover {
+    background-color: #0056b3;
+  }
+  
